@@ -1,0 +1,30 @@
+/* Media Query For desktop */
+@media only screen and (min-width: 1200px) {
+  /* Navbar larger display */
+  .navList ul {
+    gap: 50px;
+  }
+
+  #home h1 {
+    font-size: 5rem;
+  }
+
+  .btn {
+    padding: 15px 40px;
+    font-size: 1.8rem;
+  }
+
+  #about .about {
+    gap: 100px;
+  }
+
+  .projectItem {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .projectImg img {
+    width: 50%;
+    height: auto;
+  }
+}

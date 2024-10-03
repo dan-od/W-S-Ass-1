@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/mdForDesktop.css" />
+    <link rel="stylesheet" href="./css/mdForSmall.css" />
+    <title>DS's Website</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <div class="header container">
+        <div class="navBar">
+          <div class="logo">
+            <h1><span>D</span>.<span>S</span></h1>
+          </div>
+          <nav class="navList">
+            <div class="navLines">
+              <div class="bar"></div>
+            </div>
+            <ul>
+              <li>
+                <a href="#home" class="navLink scrollto active"><span>Home</span></a>
+              </li>
+              <li>
+                <a href="#about" class="navLink scrollto"><span>About</span></a>
+              </li>
+              <li>
+                <a href="#projects" class="navLink scrollto"><span>Projects</span></a>
+              </li>
+              <li>
+                <a href="#contact" class="navLink scrollto"><span>Contact</span></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Home Section -->
+    <section id="home">
+      <div class="home container">
+        <div class="homeLeft">
+          <h1>Hello, <span></span></h1>
+          <h1>I am<span></span></h1>
+          <h1>Daniel Okoro<span></span></h1>
+          <a href="#projects" class="btn">Projects</a>
+        </div>
+        <div class="homeRight">
+          <img src="./img/about_image.png" alt="Daniel Okoro" />
+        </div>
+      </div>
+    </section>
+    <!-- End Home Section -->
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="about container">
+        <div class="colLeft">
+          <div class="aboutImg">
+            <img src="./img/about_image.png" alt="About Image" />
+          </div>
+        </div>
+        <div class="colRight">
+          <h1 class="sectionTitle">About <span>me</span></h1>
+          <h2>Networking Analyst</h2>
+          <p>Your bio goes here</p>
+          <a href="./video.html" class="btn" target="_blank">Watch Video</a>
+        </div>
+      </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="projects container">
+        <h1 class="sectionTitle">My <span>Projects</span></h1>
+        <div class="allProjects">
+          
+          <div class="projectItem">
+            <div class="projectInfo">
+              <h1>Project 1</h1>
+              <p>Details about project 1 go here.</p>
+            </div>
+            <div class="projectImg">
+              <img src="./img/project1_image.png" alt="Project Image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Projects Section -->
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="contact container">
+        <h1 class="sectionTitle">Contact <span>Me</span></h1>
+        <form action="#" method="post" class="phpEmailForm">
+          <p>Name</p>
+          <input type="text" name="name" placeholder="Your Name" required />
+          <p>Email</p>
+          <input type="email" name="email" placeholder="Your Email" required />
+          <p>Subject</p>
+          <input type="text" name="subject" placeholder="Subject" required />
+          <p>Message</p>
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+    </section>
+    <!-- End Contact Section -->
+
+    <script>
+      // JavaScript for navbar scrolling and toggling
+      const navLines = document.querySelector(".navLines");
+      const mobileMenu = document.querySelector(".navList ul");
+
+      navLines.addEventListener("click", () => {
+        navLines.classList.toggle("active");
+        mobileMenu.classList.toggle("active");
+      });
+
+      document.addEventListener("scroll", () => {
+        const header = document.querySelector("#header");
+        header.style.backgroundColor = window.scrollY > 250 ? "#29323c" : "transparent";
+      });
+    </script>
+  </body>
+</html>
+  
