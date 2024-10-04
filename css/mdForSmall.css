@@ -1,97 +1,64 @@
-/* Media Query For samall */
-@media only screen and (min-width: 760px) {
-  h1.section-title {
-    font-size: 6rem;
-  }
-  .btn {
-    padding: 21px 50px;
-    font-size: 2.4rem;
+/* Media Query for smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+  /* Home Section adjustments for small screens */
+  #home {
+    flex-direction: column; /* Stack text and image vertically */
+    padding: 20px; /* Add padding for smaller screens */
   }
 
-  /* Home */
-  #home h1 {
-    font-size: 7rem;
-  }
-  /* End Home */
-
-  /* Project */
-  #projects .projectItem {
-    height: 750px;
+  .homeLeft, .homeRight {
+    flex: unset;
     width: 100%;
-    margin: 0;
-    border-radius: 0;
+    text-align: center;
   }
+
+  .homeRight img {
+    max-width: 80%; /* Scale image size for smaller screens */
+    margin: 0 auto;
+  }
+
+  /* Projects Section */
   #projects .projectItem {
-    flex-direction: row;
+    flex-direction: column; /* Stack projects vertically */
+    margin-bottom: 30px;
   }
-  #projects .allProjects .projectImg {
-    height: 100%;
-  }
-  #projects .allProjects .projectInfo {
-    height: 100%;
-  }
-  #projects .project-item:nth-child(even) {
-    flex-direction: row-reverse;
-  }
-  /* End Project */
 
-  /* About */
-  #about .about {
-    flex-direction: row;
+  .projectImg img {
+    width: 100%; /* Full width for images on small screens */
+    height: auto;
   }
-  #about .colLeft {
-    width: 610px;
-    padding-left: 64px;
-    height: 410px;
-  }
-  #about .about .colLeft .aboutImg::after {
-    left: -40px;
-    top: 34px;
-    height: 95%;
-    width: 95%;
-    border: 11px solid crimson;
-  }
-  #about .colRight h1 {
-    text-align: left;
-  }
-  #about .colRight {
-    text-align: left;
-    padding: 30px;
-  }
-  /* End About */
 
-  /* contact  */
-  #contact .contact {
+  /* About Section */
+  #about {
     flex-direction: column;
-    align-items: center;
-    padding: 100px 0;
-    min-width: 22vh;
-    justify-content: center;
+    padding: 50px 20px; /* Smaller padding on smaller screens */
+    text-align: center; /* Center text for smaller screens */
   }
-  #contact .contactItem {
-    width: 90%;
-    flex-direction: row;
-    margin: 0;
+
+  #about .about {
+    gap: 30px;
   }
-  #contact .contactItem .contactInfo {
-    text-align: left;
-    width: 100%;
-    padding-left: 20px;
+
+  .aboutImg {
+    width: 70%; /* Adjust image size on smaller screens */
+    height: auto;
+    margin: 0 auto;
   }
-  #contact .contactItem .icon {
-    width: 100px;
-    height: 100px;
+
+  /* Contact Section */
+  #contact .contact {
+    padding: 50px 20px; /* Adjust padding for smaller screens */
   }
-  #contact .contactItems {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 0;
+
+  input, textarea, button {
+    width: 100%; /* Full width form elements on small screens */
+    margin: 15px 0;
   }
-  #contact .contactItem .icon img {
-    object-fit: contain;
+
+  /* Footer */
+  #footer {
+    padding: 20px;
+    font-size: 1rem;
+    text-align: center; /* Center the text for the footer */
   }
-  /* End contact  */
 }
-/* End Media Query For small */
