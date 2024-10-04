@@ -165,7 +165,7 @@ ul {
 
 /* Contact Section */
 #contact {
-  padding: 100px 20px;
+  padding: 70px 20px;
   background-color: #0f3460;
 }
 
@@ -188,22 +188,8 @@ button:hover {
   background-color: #660f22;
 }
 
-/* Responsive Layout for smaller screens */
-@media (max-width: 768px) {
-  #home {
-    flex-direction: column;
-    padding: 20px;
-  }
-
-  .homeLeft,
-  .homeRight {
-    flex: unset;
-    width: 100%;
-    text-align: center;
-  }
-
-  .homeRight img {
-    max-width: 70%;
-    margin: 0 auto;
-  }
+/* Footer Section */
+#footer {
+  background-color: #1a1a2e;
+  text-align: center;
 }
