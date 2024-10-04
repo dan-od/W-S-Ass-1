@@ -24,9 +24,22 @@
     gap: 50px;
   }
 
+  /* Increase the size of the project images */
   .projectImg img {
-    width: 50%;
+    width: 80%;  /* Increase the width to make the image larger */
     height: auto;
+  }
+
+  /* Ensure the text box adapts properly */
+  .projectInfo {
+    flex: 1;
+    padding: 20px;
+  }
+
+  /* Center alignment for My Projects heading */
+  h1.sectionTitle {
+    text-align: center;
+    font-size: 3.5rem;
   }
 
   #footer {

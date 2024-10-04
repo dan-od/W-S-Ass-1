@@ -31,11 +31,24 @@ ul {
   transition: background-color 0.3s ease;
 }
 
-.navBar {
+.navList ul {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 50px;
+  flex-direction: row; 
+  justify-content: flex-end; /* Adjusts the alignment */
+  gap: 25px; 
+  list-style-type: none;
+}
+
+.navList ul li {
+  list-style: none;
+}
+
+.navList ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding: 10px 15px; /* Adjust padding for spacing */
 }
 
 .header-content {
@@ -47,7 +60,7 @@ ul {
 .profile-pic {
   width: 40px;
   height: 40px;
-  border-radius: 50%;
+  border-radius: 100%;
   object-fit: cover;
   z-index: 1;
 }
@@ -129,23 +142,39 @@ ul {
 }
 
 /* Projects Section */
+
+/* Center "My Projects" heading */
+.sectionTitle {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
 #projects {
   padding: 100px 20px;
   background-color: #162447;
 }
 
+.allProjects {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;  /* Add space between the projects */
+}
+
 .projectItem {
+  width: 48%; /* Ensure each project item takes up equal space */
   display: flex;
   flex-direction: column;
-  margin-bottom: 50px;
+  justify-content: space-between;
 }
+
 
 .projectInfo {
   background-color: #29323c;
   padding: 20px;
   color: white;
-  max-width: 400px;
-  word-wrap: break-word;
+  flex-grow: 1;
 }
 
 .projectImg img {

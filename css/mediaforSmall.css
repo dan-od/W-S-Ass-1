@@ -1,10 +1,11 @@
 /* Media Query for small screens (max-width: 768px) */
 @media (max-width: 768px) {
   /* Navbar adjustments */
-  .navList ul {
-    flex-direction: column;
+ .navList ul {
+    flex-direction: column; /* Stacks the items vertically */
+    text-align: right; 
     gap: 10px;
-    padding: 0;
+  }
   }
 
   .logo {
@@ -74,4 +75,3 @@
     padding: 10px 0;
     font-size: 1rem;
   }
-}
