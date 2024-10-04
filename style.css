@@ -1,3 +1,5 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap";
+
 /* Base styles */
 * {
   box-sizing: border-box;
@@ -29,7 +31,6 @@ ul {
   transition: background-color 0.3s ease;
 }
 
-/* Navbar Styling */
 .navBar {
   display: flex;
   justify-content: space-between;
@@ -37,23 +38,18 @@ ul {
   padding: 20px 50px;
 }
 
-.navList ul {
+.header-content {
   display: flex;
-  gap: 30px;
+  align-items: center;
+  gap: 20px;
 }
 
-.navList ul li {
-  list-style: none;
-}
-
-.navLink {
-  color: white;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-}
-
-.logo h1 {
-  font-size: 2rem;
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  z-index: 1;
 }
 
 /* Home Section */
@@ -64,10 +60,12 @@ ul {
   height: 100vh;
   background-color: #0f3460;
   padding: 0 100px;
+  overflow: hidden;
 }
 
 .homeLeft {
   flex: 1;
+  text-align: left;
 }
 
 .homeRight {
@@ -77,15 +75,16 @@ ul {
   align-items: center;
 }
 
-.homeRight img {
-  max-width: 100%;
+.homeRight img.main-pic {
+  max-width: 80%; /* Ensure the image stays contained */
   height: auto;
   border-radius: 15px;
 }
 
 #home h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   margin-bottom: 20px;
+  color: white;
 }
 
 .btn {
@@ -129,16 +128,6 @@ ul {
   object-fit: cover;
 }
 
-.sectionTitle {
-  text-align: center;
-  font-size: 3rem;
-  margin-bottom: 20px;
-}
-
-.sectionTitle span {
-  color: crimson;
-}
-
 /* Projects Section */
 #projects {
   padding: 100px 20px;
@@ -155,6 +144,8 @@ ul {
   background-color: #29323c;
   padding: 20px;
   color: white;
+  max-width: 400px;
+  word-wrap: break-word;
 }
 
 .projectImg img {
@@ -165,11 +156,13 @@ ul {
 
 /* Contact Section */
 #contact {
-  padding: 70px 20px;
+  padding: 100px 20px;
   background-color: #0f3460;
 }
 
-input, textarea, button {
+input,
+textarea,
+button {
   width: 100%;
   padding: 15px;
   margin: 10px 0;
@@ -188,8 +181,36 @@ button:hover {
   background-color: #660f22;
 }
 
-/* Footer Section */
+/* Footer */
 #footer {
   background-color: #1a1a2e;
+  padding: 20px;
   text-align: center;
+  color: white;
+  font-size: 1.2rem;
+}
+
+/* Responsive Layout for smaller screens */
+@media (max-width: 768px) {
+  #home {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .homeLeft,
+  .homeRight {
+    flex: unset;
+    width: 100%;
+    text-align: center;
+  }
+
+  .homeRight img.main-pic {
+    max-width: 60%; /* Ensure image stays within bounds on smaller screens */
+    margin: 0 auto;
+  }
+
+  #home h1 {
+    font-size: 2.5rem;
+  }
 }

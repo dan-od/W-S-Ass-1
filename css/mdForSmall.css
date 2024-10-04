@@ -1,64 +1,77 @@
-/* Media Query for smaller screens (max-width: 768px) */
+/* Media Query for small screens (max-width: 768px) */
 @media (max-width: 768px) {
-  /* Home Section adjustments for small screens */
-  #home {
-    flex-direction: column; /* Stack text and image vertically */
-    padding: 20px; /* Add padding for smaller screens */
+  /* Navbar adjustments */
+  .navList ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
   }
 
-  .homeLeft, .homeRight {
-    flex: unset;
+  .logo {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  /* Home Section adjustments */
+  #home {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .homeLeft,
+  .homeRight {
     width: 100%;
     text-align: center;
   }
 
   .homeRight img {
-    max-width: 80%; /* Scale image size for smaller screens */
+    max-width: 60%;
     margin: 0 auto;
   }
 
-  /* Projects Section */
-  #projects .projectItem {
-    flex-direction: column; /* Stack projects vertically */
+  #home h1 {
+    font-size: 2.5rem;
+  }
+
+  /* About Section adjustments */
+  #about {
+    flex-direction: column;
+  }
+
+  .aboutImg {
+    width: 60%;
+    height: auto;
+    margin: 0 auto 20px;
+  }
+
+  .about {
+    text-align: center;
+  }
+
+  /* Projects Section adjustments */
+  #projects {
+    padding: 50px 20px;
+  }
+
+  .projectItem {
+    flex-direction: column;
     margin-bottom: 30px;
   }
 
   .projectImg img {
-    width: 100%; /* Full width for images on small screens */
+    width: 100%;
     height: auto;
-  }
-
-  /* About Section */
-  #about {
-    flex-direction: column;
-    padding: 50px 20px; /* Smaller padding on smaller screens */
-    text-align: center; /* Center text for smaller screens */
-  }
-
-  #about .about {
-    gap: 30px;
-  }
-
-  .aboutImg {
-    width: 70%; /* Adjust image size on smaller screens */
-    height: auto;
-    margin: 0 auto;
   }
 
   /* Contact Section */
-  #contact .contact {
-    padding: 50px 20px; /* Adjust padding for smaller screens */
-  }
-
-  input, textarea, button {
-    width: 100%; /* Full width form elements on small screens */
-    margin: 15px 0;
+  #contact {
+    padding: 50px 20px;
   }
 
   /* Footer */
   #footer {
-    padding: 20px;
+    padding: 10px 0;
     font-size: 1rem;
-    text-align: center; /* Center the text for the footer */
   }
 }

@@ -1,4 +1,4 @@
-/* Media Query for desktop (larger than 1200px) */
+/* Media Query for larger screens (above 1200px) */
 @media only screen and (min-width: 1200px) {
   /* Navbar larger display */
   .navList ul {
@@ -6,7 +6,7 @@
   }
 
   #home h1 {
-    font-size: 4.5rem; /* Adjusted font size for large screens */
+    font-size: 4.5rem;
   }
 
   .btn {
@@ -14,26 +14,19 @@
     font-size: 1.8rem;
   }
 
-  /* About Section */
   #about .about {
-    gap: 100px; /* Ensuring more space between text and image */
+    gap: 100px;
   }
 
   .projectItem {
-    flex-direction: row; /* Display projects side by side on larger screens */
+    flex-direction: row;
     justify-content: space-between;
-    gap: 50px; /* Adding space between project items */
+    gap: 50px;
   }
 
   .projectImg img {
     width: 50%;
     height: auto;
-  }
-
-  /* Contact Section */
-  #contact .contact {
-    padding: 100px 20px;
-    text-align: left; /* Aligning text to the left on larger screens */
   }
 
   #footer {
