@@ -58,6 +58,7 @@ ul {
 }
 
 .profile-pic {
+  padding: 2px; /* Adjust padding for spacing */
   width: 40px;
   height: 40px;
   border-radius: 100%;
