@@ -1,47 +1,52 @@
 /* Media Query for larger screens (above 1200px) */
 @media only screen and (min-width: 1200px) {
-  /* Navbar larger display */
+  /* Increase the gap between the navbar items for larger screens */
   .navList ul {
     gap: 50px;
   }
 
+  /* Increase the font size for the main heading in the home section */
   #home h1 {
     font-size: 4.5rem;
   }
 
+  /* Increase padding and font size for buttons on larger screens */
   .btn {
     padding: 15px 40px;
     font-size: 1.8rem;
   }
 
+  /* Add more space between columns in the about section */
   #about .about {
     gap: 100px;
   }
 
+  /* Arrange project items in a row for larger screens */
   .projectItem {
     flex-direction: row;
     justify-content: space-between;
     gap: 50px;
   }
 
-  /* Increase the size of the project images */
+  /* Increase the size of the project images on larger screens */
   .projectImg img {
     width: 80%;  /* Increase the width to make the image larger */
     height: auto;
   }
 
-  /* Ensure the text box adapts properly */
+  /* Ensure the project info box adapts properly to larger screens */
   .projectInfo {
     flex: 1;
     padding: 20px;
   }
 
-  /* Center alignment for My Projects heading */
+  /* Center alignment and increase font size for the "My Projects" heading */
   h1.sectionTitle {
     text-align: center;
     font-size: 3.5rem;
   }
 
+  /* Increase padding and font size for the footer on larger screens */
   #footer {
     padding: 20px 0;
     font-size: 1.2rem;

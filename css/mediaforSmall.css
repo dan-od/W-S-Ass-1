@@ -1,78 +1,85 @@
 /* Media Query for small screens (max-width: 768px) */
 @media (max-width: 768px) {
-  /* Navbar adjustments */
- .navList ul {
-    flex-direction: column; /* Stacks the items vertically */
-    text-align: right; 
-    padding: 10px;
-  }
+  /* Stack the navbar items vertically and adjust their alignment */
+  .navList ul {
+    flex-direction: column;
+    text-align: right;
+    gap: 10px;
   }
 
+  /* Center the logo and add spacing below it */
   .logo {
     text-align: center;
     margin-bottom: 10px;
   }
 
-  /* Home Section adjustments */
+  /* Adjust the layout of the home section to stack items vertically on smaller screens */
   #home {
     flex-direction: column;
-    text-align: center;
+    height: auto; /* Remove fixed height to accommodate content */
     padding: 20px;
   }
 
+  /* Set full width for both homeLeft and homeRight on small screens */
   .homeLeft,
   .homeRight {
-    flex: unset;
     width: 100%;
     text-align: center;
   }
 
-  .homeRight img.mainpic {
-    max-width: 80%;
-    margin: 20px auto;
+  /* Ensure the main image scales appropriately on small screens */
+  .homeRight img {
+    max-width: 60%;
+    margin: 0 auto;
   }
 
+  /* Decrease the font size for the main heading on smaller screens */
   #home h1 {
     font-size: 2.5rem;
   }
 
-  /* About Section adjustments */
+  /* Stack the about section items vertically and center them */
   #about {
     flex-direction: column;
   }
 
+  /* Scale the about image on smaller screens */
   .aboutImg {
     width: 60%;
     height: auto;
     margin: 0 auto 20px;
   }
 
+  /* Center align text in the about section */
   .about {
     text-align: center;
   }
 
-  /* Projects Section adjustments */
+  /* Adjust project section padding on small screens */
   #projects {
     padding: 50px 20px;
   }
 
+  /* Stack project items vertically on small screens */
   .projectItem {
     flex-direction: column;
     margin-bottom: 30px;
   }
 
+  /* Ensure project images scale correctly on small screens */
   .projectImg img {
     width: 100%;
     height: auto;
   }
 
-  /* Contact Section */
+  /* Adjust padding for the contact section on small screens */
   #contact {
     padding: 50px 20px;
   }
 
-  /* Footer */
+  /* Adjust padding and font size for the footer on small screens */
   #footer {
     padding: 10px 0;
     font-size: 1rem;
   }
+}

@@ -7,17 +7,20 @@
   margin: 0;
 }
 
+/* Body styling: applies a dark background and sets default font */
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #1f1f2f;
   color: white;
 }
 
+/* Links styling */
 a {
   color: white;
   text-decoration: none;
 }
 
+/* Removes bullets from unordered lists */
 ul {
   list-style-type: none;
 }
@@ -31,11 +34,12 @@ ul {
   transition: background-color 0.3s ease;
 }
 
+/* Navigation list styles */
 .navList ul {
   display: flex;
-  flex-direction: row; 
-  justify-content: flex-end; /* Adjusts the alignment */
-  gap: 25px; 
+  flex-direction: row;
+  justify-content: flex-end; /* Aligns nav items to the right */
+  gap: 25px;
   list-style-type: none;
 }
 
@@ -48,76 +52,64 @@ ul {
   color: white;
   font-size: 1.2rem;
   text-transform: uppercase;
-  padding: 10px 15px; /* Adjust padding for spacing */
+  padding: 10px 15px;
 }
 
+/* Flexbox for logo and profile picture */
 .header-content {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
+/* Profile picture styling */
 .profile-pic {
-  padding: 2px; /* Adjust padding for spacing */
+  padding: 2px;
   width: 40px;
   height: 40px;
   border-radius: 100%;
   object-fit: cover;
-  z-index: 1;
 }
 
-/* Home Section */
+/* Home Section: layout and background */
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  background-color: #0f3460;
+  padding: 0 100px;
+}
 
-#home .home {
-  background-color: #162447;
-  flex-direction: column-reverse;
-  text-align: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 100px 20px;
-  
+/* Left column of the home section */
+.homeLeft {
+  flex: 1;
+  text-align: left;
 }
-#home .colRight {
-  background-color: #162447;
-  width: 250px;
-  height: 360px;
+
+/* Right column of the home section */
+.homeRight {
+  flex: 1;
+  display: flex;
+  justify-content: right;
+  align-items: center;
 }
-#home .colLeft {
-  background-color: #162447;
-  width: 100%;
+
+/* Main image styling */
+.homeRight img.main-pic {
+  max-width: 40%; /* Ensures the image stays contained */
+  height: auto;
+  border-radius: 15px;
 }
-#home .colLeft h2 {
-  background-color: #162447;
-  font-size: 1.8rem;
-  font-weight: 500;
-  letter-spacing: 0.2rem;
-  margin-bottom: 10px;
-}
-#home .colRight p {
-  background-color: #162447;
+
+/* Text headings styling */
+#home h1 {
+  font-size: 3.5rem;
   margin-bottom: 20px;
-}
-#home .colRight .btn {
-  background-color: #162447;
-  color: crimson;
-  margin-bottom: 50px;
-  padding: 10px 20px;
-  font-size: 2rem;
-}
-#home .colLeft .homeImg {
-  background-color: #162447;
-  height: 100%;
-  width: 100%;
-  position: relative;
-  border: 10px solid white;
-
+  color: white;
 }
 
-#home .colRight .btn:hover {
-  background-color: #660f22;
-}
-
-/* Home Section 
+/* Button styling */
 .btn {
   display: inline-block;
   padding: 10px 30px;
@@ -127,9 +119,7 @@ ul {
   font-size: 1.5rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  text-align: left;
 }
-*/
 
 .btn:hover {
   background-color: #660f22;
@@ -162,41 +152,41 @@ ul {
 }
 
 /* Projects Section */
-
-/* Center "My Projects" heading */
 .sectionTitle {
   text-align: center;
   font-size: 3rem;
   margin-bottom: 20px;
 }
 
+/* Project container layout */
 #projects {
   padding: 100px 20px;
   background-color: #162447;
 }
 
+/* Flexbox for projects */
 .allProjects {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 50px;  /* Add space between the projects */
+  gap: 50px;
 }
 
 .projectItem {
-  width: 48%; /* Ensure each project item takes up equal space */
+  width: 48%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-
+/* Project info box styling */
 .projectInfo {
   background-color: #29323c;
   padding: 20px;
   color: white;
-  flex-grow: 1;
 }
 
+/* Project image styling */
 .projectImg img {
   width: 100%;
   height: 300px;
@@ -209,6 +199,7 @@ ul {
   background-color: #0f3460;
 }
 
+/* Input, text area, and button styles */
 input,
 textarea,
 button {
@@ -249,18 +240,15 @@ button:hover {
 
   .homeLeft,
   .homeRight {
-    flex: unset;
     width: 100%;
-    text-align: center;
   }
 
   .homeRight img.main-pic {
-    max-width: 60%; /* Ensure image stays within bounds on smaller screens */
+    max-width: 60%;
     margin: 0 auto;
   }
 
   #home h1 {
     font-size: 2.5rem;
-    text-align: center;
   }
 }
