@@ -67,40 +67,57 @@ ul {
 }
 
 /* Home Section */
-#home {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 100vh;
-  background-color: #0f3460;
-  padding: 0 100px;
-  overflow: hidden;
-}
 
-.homeLeft {
-  flex: 1;
-  text-align: left;
+#home .home {
+  background-color: #162447;
+  flex-direction: column-reverse;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 20px;
+  
 }
-
-.homeRight {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#home .colRight {
+  background-color: #162447;
+  width: 250px;
+  height: 360px;
 }
-
-.homeRight img.main-pic {
-  max-width: 80%; /* Ensure the image stays contained */
-  height: auto;
-  border-radius: 15px;
+#home .colLeft {
+  background-color: #162447;
+  width: 100%;
 }
-
-#home h1 {
-  font-size: 3.5rem;
+#home .colLeft h2 {
+  background-color: #162447;
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  margin-bottom: 10px;
+}
+#home .colRight p {
+  background-color: #162447;
   margin-bottom: 20px;
-  color: white;
+}
+#home .colRight .btn {
+  background-color: #162447;
+  color: crimson;
+  margin-bottom: 50px;
+  padding: 10px 20px;
+  font-size: 2rem;
+}
+#home .colLeft .homeImg {
+  background-color: #162447;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  border: 10px solid white;
+
 }
 
+#home .colRight .btn:hover {
+  background-color: #660f22;
+}
+
+/* Home Section 
 .btn {
   display: inline-block;
   padding: 10px 30px;
@@ -110,7 +127,9 @@ ul {
   font-size: 1.5rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  text-align: left;
 }
+*/
 
 .btn:hover {
   background-color: #660f22;
@@ -242,5 +261,6 @@ button:hover {
 
   #home h1 {
     font-size: 2.5rem;
+    text-align: center;
   }
 }

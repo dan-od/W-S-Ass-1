@@ -4,7 +4,7 @@
  .navList ul {
     flex-direction: column; /* Stacks the items vertically */
     text-align: right; 
-    gap: 10px;
+    padding: 10px;
   }
   }
 
@@ -16,19 +16,20 @@
   /* Home Section adjustments */
   #home {
     flex-direction: column;
-    height: auto;
+    text-align: center;
     padding: 20px;
   }
 
   .homeLeft,
   .homeRight {
+    flex: unset;
     width: 100%;
     text-align: center;
   }
 
-  .homeRight img {
-    max-width: 60%;
-    margin: 0 auto;
+  .homeRight img.mainpic {
+    max-width: 80%;
+    margin: 20px auto;
   }
 
   #home h1 {
